@@ -5,12 +5,18 @@
   "mixins": [
     "AnvilMenuMixin",
     "ItemMixin",
-    "PlayerMixin"
+    "PlayerMixin",
+    "backslot.InventoryMenuMixin",
+    "backslot.InventoryMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "overwrites": {
     "requireAnnotations": true
-  }
+  },
+  "client": [
+    "backslot.CreativeModeInventoryScreenMixin",
+    "backslot.GuiMixin"
+  ]
 }

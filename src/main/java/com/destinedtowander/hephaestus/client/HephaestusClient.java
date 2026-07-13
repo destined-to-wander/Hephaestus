@@ -1,6 +1,8 @@
-package com.destinedtowander.hephaestus;
+package com.destinedtowander.hephaestus.client;
 
+import com.destinedtowander.hephaestus.Hephaestus;
 import net.minecraft.client.Minecraft;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -9,6 +11,8 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+
+import static com.destinedtowander.hephaestus.Hephaestus.id;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = Hephaestus.MODID, dist = Dist.CLIENT)
@@ -24,8 +28,6 @@ public class HephaestusClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
-        Hephaestus.LOGGER.info("HELLO FROM CLIENT SETUP");
-        Hephaestus.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        ResourceLocation test = id("hud/backslot_selection");
     }
 }

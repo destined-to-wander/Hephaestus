@@ -23,5 +23,16 @@
 hs_err_pid*
 replay_pid*
 
+# things I don't care about
+build/
+.gradle/
+.idea/
+run/
+templates/
+
 # macos
 .DS_store
+
+# things I do care about
+!gradle/wrapper/
+

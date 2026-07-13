@@ -1,13 +1,10 @@
 {
-  "itemGroup.hephaestus": "Example Mod Tab",
-  "block.hephaestus.example_block": "Example Block",
-  "item.hephaestus.example_item": "Example Item",
+  "category.hephaestus": "Hephaestus",
 
-  "hephaestus.configuration.title": "Hephaestus Configs",
-  "hephaestus.configuration.section.hephaestus.common.toml": "Hephaestus Configs",
-  "hephaestus.configuration.section.hephaestus.common.toml.title": "Hephaestus Configs",
-  "hephaestus.configuration.items": "Item List",
-  "hephaestus.configuration.logDirtBlock": "Log Dirt Block",
-  "hephaestus.configuration.magicNumberIntroduction": "Magic Number Text",
-  "hephaestus.configuration.magicNumber": "Magic Number"
+  "item.hephaestus.repair_kit": "Repair Kit",
+
+  "item.hephaestus.repair_kit.desc": "Universal Repair Kit. Only repairs to 50% durability.",
+
+  "key.hephaestus.backslot": "Select Backslot",
+  "key.hephaestus.swap_backslot": "Swap with Backslot"
 }
